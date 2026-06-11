@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portcullis Trail 10K in Langport: race details, course information, entry and results.">
+  <title>Portcullis Trail 10K | Langport Runners</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --navy: #0b1f35;
+  --navy-soft: #142d48;
+  --coral: #ff5b48;
+  --lime: #d8f15a;
+  --cream: #f4f0e7;
+  --white: #fff;
+  --muted: #657080;
+  --display: "Barlow Condensed", Impact, sans-serif;
+  --body: "DM Sans", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; overflow-x: hidden; color: var(--navy); background: var(--cream); font-family: var(--body); -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+.race-header { position: absolute; z-index: 10; top: 0; left: 0; width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 24px 5vw; color: white; }
+.race-brand { display: flex; align-items: center; gap: 11px; font-family: var(--display); font-size: 17px; line-height: .78; letter-spacing: .07em; text-transform: uppercase; }
+.race-brand img { width: 54px; height: 55px; }
+.race-brand strong { font-size: 25px; }
+.race-header nav { display: flex; align-items: center; gap: 30px; font-size: 13px; font-weight: 700; }
+.header-entry { padding: 15px 20px; color: var(--navy); background: var(--lime); }
+.race-hero { position: relative; min-height: 850px; height: 100vh; max-height: 1000px; overflow: hidden; color: white; background: var(--navy); }
+.race-hero > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.race-hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(5,18,32,.94), rgba(5,18,32,.64) 43%, rgba(5,18,32,.12)), linear-gradient(0deg, rgba(5,18,32,.75), transparent 45%); }
+.race-hero-content { position: relative; z-index: 2; width: 62%; padding: 24vh 5vw 0; }
+.race-eyebrow, .race-kicker { margin: 0 0 20px; color: var(--lime); font-size: 11px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
+h1, h2, h3 { margin: 0; font-family: var(--display); text-transform: uppercase; }
+h1 { font-size: clamp(90px, 11vw, 170px); line-height: .82; letter-spacing: -.02em; }
+h1 em { color: var(--coral); font-style: italic; }
+.race-hero-content > p:not(.race-eyebrow) { max-width: 580px; margin: 32px 0; color: rgba(255,255,255,.8); font-size: 18px; line-height: 1.65; }
+.race-button { display: inline-flex; align-items: center; justify-content: center; gap: 45px; min-height: 56px; padding: 0 24px; font-size: 14px; font-weight: 700; }
+.race-button.coral { color: white; background: var(--coral); }
+.race-button.lime { color: var(--navy); background: var(--lime); }
+.race-date { position: absolute; z-index: 2; right: 5vw; bottom: 48px; width: 230px; padding: 24px; color: var(--navy); background: var(--lime); transform: rotate(-3deg); }
+.race-date span { font-size: 10px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.race-date strong { display: block; margin-top: 6px; font-family: var(--display); font-size: 47px; line-height: 1; }
+.race-date p { margin: 4px 0 0; font-size: 13px; }
+.race-facts { display: grid; grid-template-columns: repeat(4, 1fr); color: white; background: var(--navy); }
+.race-facts article { padding: 38px 4vw; border-right: 1px solid rgba(255,255,255,.15); }
+.race-facts span { color: var(--lime); font-size: 10px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+.race-facts strong { display: block; margin-top: 10px; font-family: var(--display); font-size: 37px; line-height: 1; text-transform: uppercase; }
+.race-facts p { margin: 8px 0 0; color: rgba(255,255,255,.55); font-size: 12px; }
+.race-section { padding: 115px 7vw; }
+.race-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 8vw; }
+.race-section h2 { font-size: clamp(65px, 8vw, 120px); line-height: .86; letter-spacing: -.025em; }
+.race-intro .race-kicker, .course .race-kicker { color: var(--coral); }
+.race-copy { padding-top: 45px; }
+.race-copy .lead { margin: 0; font-family: var(--display); font-size: 35px; font-weight: 700; line-height: 1.08; text-transform: uppercase; }
+.race-copy p:last-child { color: var(--muted); font-size: 17px; line-height: 1.8; }
+.race-gallery { display: grid; grid-template-columns: 1.3fr .85fr .85fr; gap: 16px; padding-top: 0; }
+.race-gallery figure { min-height: 500px; margin: 0; overflow: hidden; background: var(--navy); }
+.race-gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+.race-gallery figure:hover img { transform: scale(1.025); }
+.course { color: white; background: var(--navy-soft); }
+.course-heading { max-width: 800px; }
+.course-grid { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 70px; border-top: 1px solid rgba(255,255,255,.16); border-left: 1px solid rgba(255,255,255,.16); }
+.course-grid article { min-height: 270px; padding: 25px; border-right: 1px solid rgba(255,255,255,.16); border-bottom: 1px solid rgba(255,255,255,.16); }
+.course-grid span { color: var(--lime); font-family: var(--display); }
+.course-grid h3 { margin-top: 70px; font-size: 32px; line-height: 1; }
+.course-grid p { color: rgba(255,255,255,.6); font-size: 13px; line-height: 1.7; }
+.course-actions { display: flex; align-items: center; gap: 35px; margin-top: 35px; }
+.plain-link { padding-bottom: 5px; font-size: 13px; font-weight: 700; border-bottom: 1px solid var(--coral); }
+.plain-link.light { color: white; border-color: rgba(255,255,255,.5); }
+.results { display: grid; grid-template-columns: .8fr 1.2fr; gap: 9vw; align-items: center; background: var(--lime); }
+.results .race-kicker { color: var(--navy); }
+.results-copy > p:last-child { max-width: 520px; color: rgba(11,31,53,.68); font-size: 16px; line-height: 1.75; }
+.result-links { border-top: 1px solid rgba(11,31,53,.24); }
+.result-links a { display: grid; grid-template-columns: 1fr auto; align-items: center; padding: 25px 0; border-bottom: 1px solid rgba(11,31,53,.24); }
+.result-links span { font-size: 10px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+.result-links strong { grid-row: 1 / 3; grid-column: 2; font-family: var(--display); font-size: 78px; line-height: 1; }
+.result-links b { margin-top: 7px; font-size: 12px; }
+.race-cta { display: flex; align-items: flex-end; justify-content: space-between; gap: 5vw; color: white; background: var(--navy); }
+.cta-actions { display: flex; flex-direction: column; align-items: center; gap: 25px; min-width: 260px; }
+.race-footer { display: flex; justify-content: space-between; gap: 25px; padding: 35px 5vw; color: rgba(255,255,255,.6); background: #071626; font-size: 12px; }
+.race-footer a { color: white; font-weight: 700; }
+
+@media (max-width: 900px) {
+  .race-header { padding: 18px 22px; }
+  .race-header nav a:not(.header-entry) { display: none; }
+  .race-hero { min-height: 820px; height: 100svh; }
+  .race-hero-content { width: 85%; padding: 22vh 22px 0; }
+  .race-facts { grid-template-columns: 1fr 1fr; }
+  .race-facts article:nth-child(2) { border-right: 0; }
+  .race-section { padding: 85px 24px; }
+  .race-intro, .results { grid-template-columns: 1fr; gap: 30px; }
+  .race-copy { padding-top: 0; }
+  .race-gallery { grid-template-columns: 1fr 1fr; }
+  .race-gallery .gallery-wide { grid-column: 1 / -1; }
+  .race-gallery figure { min-height: 420px; }
+  .course-grid { grid-template-columns: 1fr 1fr; }
+  .race-cta { align-items: flex-start; flex-direction: column; }
+}
+
+@media (max-width: 570px) {
+  .race-brand { font-size: 13px; }
+  .race-brand img { width: 45px; height: 46px; }
+  .race-brand strong { font-size: 20px; }
+  .header-entry { padding: 13px 15px; font-size: 12px; }
+  .race-hero { min-height: 850px; height: auto; }
+  .race-hero > img { object-position: 58% center; }
+  .race-hero-shade { background: linear-gradient(90deg, rgba(5,18,32,.96), rgba(5,18,32,.5)), linear-gradient(0deg, rgba(5,18,32,.92), transparent 62%); }
+  .race-hero-content { width: 100%; padding: 145px 18px 235px; }
+  h1 { font-size: clamp(66px, 22vw, 94px); line-height: .88; }
+  .race-hero-content > p:not(.race-eyebrow) { margin: 25px 0; font-size: 15px; }
+  .race-date { right: 18px; bottom: 35px; width: 205px; }
+  .race-facts article { padding: 28px 18px; }
+  .race-facts strong { font-size: 29px; }
+  .race-section { padding: 68px 18px; }
+  .race-section h2 { font-size: clamp(54px, 18vw, 78px); line-height: .9; }
+  .race-copy .lead { font-size: 27px; }
+  .race-copy p:last-child { font-size: 15px; }
+  .race-gallery { grid-template-columns: 1fr; gap: 10px; }
+  .race-gallery .gallery-wide { grid-column: auto; }
+  .race-gallery figure { min-height: 350px; }
+  .course-grid { grid-template-columns: 1fr; margin-top: 45px; }
+  .course-grid article { min-height: 220px; }
+  .course-grid h3 { margin-top: 45px; }
+  .course-actions { align-items: stretch; flex-direction: column; }
+  .course-actions .race-button, .cta-actions .race-button { width: 100%; }
+  .course-actions .plain-link { align-self: flex-start; min-height: 40px; }
+  .result-links strong { font-size: 58px; }
+  .cta-actions { width: 100%; min-width: 0; }
+  .race-footer { align-items: flex-start; flex-direction: column; }
+}
+
+</style>
+</head>
+<body>
+  <header class="race-header">
+    <a class="race-brand" href="index.html" aria-label="Back to Langport Runners">
+      <img src="data:image/png;base64,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" alt="">
+      <span>Langport<br><strong>Runners</strong></span>
+    </a>
+    <nav aria-label="Race page navigation">
+      <a href="#details">Race details</a>
+      <a href="#course">The course</a>
+      <a href="#results">Results</a>
+      <a class="header-entry" href="https://www.webscorer.com/register?raceid=415283" target="_blank" rel="noreferrer">Enter race ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="race-hero">
+      <img src="https://static.wixstatic.com/media/318867_93603959568244408bc44fe85b1b8f9b~mv2.jpg/v1/fill/w_1600,h_1050,al_c,q_90/318867_93603959568244408bc44fe85b1b8f9b~mv2.jpg" alt="Runners taking part in the Portcullis Trail 10K">
+      <div class="race-hero-shade"></div>
+      <div class="race-hero-content">
+        <p class="race-eyebrow">Langport Runners present</p>
+        <h1>Portcullis<br><em>Trail 10K.</em></h1>
+        <p>Ten kilometres of Somerset Levels, droves and open countryside. A local race with a proper trail-running spirit.</p>
+        <a class="race-button coral" href="https://www.webscorer.com/register?raceid=415283" target="_blank" rel="noreferrer">Enter the 2026 race <span>↗</span></a>
+      </div>
+      <div class="race-date">
+        <span>Race day</span>
+        <strong>17.05.26</strong>
+        <p>Sunday · 9:00am</p>
+      </div>
+    </section>
+
+    <section class="race-facts" id="details">
+      <article><span>Distance</span><strong>10KM</strong><p>Mixed-terrain trail</p></article>
+      <article><span>Start & finish</span><strong>Cocklemoor</strong><p>Langport · TA10 9RA</p></article>
+      <article><span>Cut-off</span><strong>2 hours</strong><p>Open to ages 17+</p></article>
+      <article><span>Entry</span><strong>£20 / £22</strong><p>UKA affiliated / unaffiliated</p></article>
+    </section>
+
+    <section class="race-intro race-section">
+      <div>
+        <p class="race-kicker">A race worth getting muddy for</p>
+        <h2>From the river<br>to the Levels.</h2>
+      </div>
+      <div class="race-copy">
+        <p class="lead">Start on Cocklemoor, then head out across the beautiful countryside surrounding Langport.</p>
+        <p>The Portcullis Trail 10K follows mixed-terrain trails through the Levels, local droves and rolling countryside, with scenery and wide Somerset views throughout. Every finisher receives a medal.</p>
+      </div>
+    </section>
+
+    <section class="race-gallery race-section" aria-label="Portcullis Trail race photographs">
+      <figure class="gallery-wide">
+        <img src="https://static.wixstatic.com/media/318867_0f822023223545e4829b1ec69a37abba~mv2.jpg/v1/fill/w_1200,h_800,al_c,q_90/318867_0f822023223545e4829b1ec69a37abba~mv2.jpg" alt="The countryside on the Portcullis Trail course" loading="lazy">
+      </figure>
+      <figure>
+        <img src="https://static.wixstatic.com/media/ad4fb4_2e1d2a78635e40198b6d6c919f383e50~mv2.jpg/v1/fill/w_900,h_1100,al_c,q_90/ad4fb4_2e1d2a78635e40198b6d6c919f383e50~mv2.jpg" alt="Runners at the 2024 Portcullis Trail 10K" loading="lazy">
+      </figure>
+      <figure>
+        <img src="https://static.wixstatic.com/media/ad4fb4_9c42278f4de842b38db1174b7f1c42ea~mv2.jpg/v1/fill/w_900,h_1100,al_c,q_90/ad4fb4_9c42278f4de842b38db1174b7f1c42ea~mv2.jpg" alt="Portcullis Trail runners on race day" loading="lazy">
+      </figure>
+    </section>
+
+    <section class="course race-section" id="course">
+      <div class="course-heading">
+        <p class="race-kicker">Know the course</p>
+        <h2>Trail ready.</h2>
+      </div>
+      <div class="course-grid">
+        <article><span>01</span><h3>Clearly marked</h3><p>Course signage and a team of marshals will guide runners around the route.</p></article>
+        <article><span>02</span><h3>Water at 5K</h3><p>A water station is positioned around halfway. This is a cupless event, so bring your own cup.</p></article>
+        <article><span>03</span><h3>Medical support</h3><p>Medical cover is available at the start and finish area and along the course.</p></article>
+        <article><span>04</span><h3>Race rules</h3><p>No headphones and no running with dogs. The event follows UKA rules.</p></article>
+      </div>
+      <div class="course-actions">
+        <a class="race-button lime" href="https://www.portcullistrail.co.uk/the-course-map" target="_blank" rel="noreferrer">View official course map <span>↗</span></a>
+        <a class="plain-link" href="https://www.google.com/maps/dir/?api=1&destination=Cocklemoor%2C+Langport%2C+TA10+9RA" target="_blank" rel="noreferrer">Directions to Cocklemoor →</a>
+      </div>
+    </section>
+
+    <section class="results race-section" id="results">
+      <div class="results-copy">
+        <p class="race-kicker">The finish line archive</p>
+        <h2>Race<br>results.</h2>
+        <p>Official final results are hosted by Webscorer. Select a year to view searchable finishing times and positions.</p>
+      </div>
+      <div class="result-links">
+        <a href="https://www.webscorer.com/race?raceid=390599" target="_blank" rel="noreferrer"><span>Official results</span><strong>2025</strong><b>View results ↗</b></a>
+        <a href="https://www.webscorer.com/race?raceid=351768" target="_blank" rel="noreferrer"><span>Official results</span><strong>2024</strong><b>View results ↗</b></a>
+      </div>
+    </section>
+
+    <section class="race-cta race-section">
+      <div>
+        <p class="race-kicker">Sunday 17 May 2026</p>
+        <h2>See you on<br>Cocklemoor.</h2>
+      </div>
+      <div class="cta-actions">
+        <a class="race-button coral" href="https://www.webscorer.com/register?raceid=415283" target="_blank" rel="noreferrer">Enter the race <span>↗</span></a>
+        <a class="plain-link light" href="mailto:portcullis.trail@langportrunners.co.uk">Email the race director →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="race-footer">
+    <a href="index.html">← Back to Langport Runners</a>
+    <span>Portcullis Trail 10K · Langport, Somerset</span>
+  </footer>
+</body>
+</html>
