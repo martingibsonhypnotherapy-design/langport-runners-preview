@@ -117,6 +117,25 @@ h1 em { color: var(--coral); font-style: italic; }
 .session-note p span { color: var(--coral); }
 .session-note a { color: white; font-weight: 700; border-bottom: 1px solid rgba(255,255,255,.5); padding-bottom: 4px; }
 
+.latest { background: var(--cream); }
+.latest-heading { display: grid; grid-template-columns: 1.2fr .8fr; align-items: end; gap: 8vw; }
+.latest-heading h2 { font-size: clamp(62px, 7.8vw, 118px); font-weight: 900; line-height: .9; letter-spacing: -.035em; }
+.latest-heading > p { max-width: 520px; margin: 0 0 10px; color: var(--muted); font-size: 17px; line-height: 1.75; }
+.social-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 70px; }
+.social-grid-single { grid-template-columns: minmax(0, 900px); justify-content: center; }
+.social-panel { min-width: 0; padding: 24px; background: white; border: 1px solid rgba(11,31,53,.12); box-shadow: 0 18px 55px rgba(11,31,53,.08); }
+.social-panel-head { min-height: 82px; display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
+.social-network { color: var(--coral); font-size: 10px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.social-panel h3 { margin-top: 7px; color: var(--navy); font-size: clamp(28px, 3vw, 43px); font-weight: 800; line-height: 1; }
+.social-panel-head > a { flex: 0 0 auto; margin-top: 5px; color: var(--navy); font-size: 12px; font-weight: 700; border-bottom: 1px solid var(--coral); padding-bottom: 4px; }
+.social-embed { position: relative; min-height: 620px; overflow: hidden; background: #f1eee8; }
+.social-embed iframe { position: relative; z-index: 2; display: block; width: 100%; height: 620px; border: 0; background: white; }
+.embed-fallback { position: absolute; z-index: 1; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 40px; color: var(--navy); text-align: center; }
+.embed-fallback strong { font-family: var(--display); font-size: 34px; text-transform: uppercase; }
+.embed-fallback span { max-width: 280px; color: var(--muted); font-size: 14px; line-height: 1.6; }
+.embed-fallback a { margin-top: 8px; color: var(--coral); font-size: 13px; font-weight: 700; }
+.social-note { margin: 22px 0 0; color: var(--muted); font-size: 11px; text-align: center; }
+
 .race { position: relative; min-height: 680px; display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 10vw; overflow: hidden; background: var(--lime); }
 .race-badge { position: relative; z-index: 2; width: min(32vw, 400px); aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; background: var(--coral); border-radius: 50%; transform: rotate(-7deg); box-shadow: 18px 20px 0 rgba(11,31,53,.12); }
 .race-badge span { font-size: 12px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
@@ -161,6 +180,8 @@ h1 em { color: var(--coral); font-style: italic; }
   .intro-copy { padding-top: 20px; }
   .session-grid { grid-template-columns: 1fr; }
   .session-card { min-height: 275px; }
+  .latest-heading { grid-template-columns: 1fr; gap: 25px; }
+  .social-grid { grid-template-columns: 1fr; }
   .race { grid-template-columns: 1fr; gap: 65px; text-align: left; }
   .race-badge { width: min(70vw, 380px); margin: auto; }
   .join { align-items: flex-start; flex-direction: column; }
@@ -183,6 +204,10 @@ h1 em { color: var(--coral); font-style: italic; }
   .intro h2, .section-heading h2, .race h2, .join h2 { font-size: clamp(57px, 19vw, 85px); }
   .intro-copy .lead { font-size: 29px; }
   .session-note { align-items: flex-start; flex-direction: column; gap: 12px; }
+  .social-panel { padding: 16px; }
+  .social-panel-head { min-height: 105px; }
+  .social-panel-head > a { font-size: 11px; }
+  .social-embed, .social-embed iframe { min-height: 540px; height: 540px; }
   .race { min-height: auto; }
   .race-badge { width: 78vw; }
   .site-footer { grid-template-columns: 1fr; }
@@ -231,6 +256,7 @@ document.querySelector("#year").textContent = new Date().getFullYear();
     <nav class="site-nav" id="site-nav" aria-label="Main navigation">
       <a href="#about">The club</a>
       <a href="#sessions">Run with us</a>
+      <a href="#latest">Latest</a>
       <a href="#portcullis">Portcullis 10K</a>
       <a class="nav-cta" href="#join">Join the club <span>↗</span></a>
     </nav>
@@ -309,6 +335,41 @@ document.querySelector("#year").textContent = new Date().getFullYear();
       </div>
     </section>
 
+    <section class="latest section" id="latest">
+      <div class="latest-heading">
+        <div>
+          <p class="kicker">Fresh from the club</p>
+          <h2>Latest runs.<br>Latest stories.</h2>
+        </div>
+        <p>Race days, muddy trails, personal bests and the people behind the miles. Follow along with the latest club updates.</p>
+      </div>
+      <div class="social-grid social-grid-single">
+        <article class="social-panel social-panel-instagram">
+          <div class="social-panel-head">
+            <div>
+              <span class="social-network">Instagram</span>
+              <h3>Pictures from the pack</h3>
+            </div>
+            <a href="https://www.instagram.com/langport_runners/" target="_blank" rel="noreferrer" aria-label="Open Langport Runners on Instagram">View profile ↗</a>
+          </div>
+          <div class="social-embed instagram-embed">
+            <iframe
+              src="https://www.instagram.com/langport_runners/embed/"
+              title="Latest pictures from Langport Runners on Instagram"
+              loading="lazy"
+              allowtransparency="true">
+            </iframe>
+            <div class="embed-fallback">
+              <strong>@langport_runners</strong>
+              <span>See the club's latest pictures on Instagram.</span>
+              <a href="https://www.instagram.com/langport_runners/" target="_blank" rel="noreferrer">Open Instagram ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="social-note">Posts are loaded directly from Instagram. If they are hidden by your browser, use the profile link above.</p>
+    </section>
+
     <section class="race section" id="portcullis">
       <div class="race-badge" aria-hidden="true">
         <span>Langport</span>
@@ -346,7 +407,9 @@ document.querySelector("#year").textContent = new Date().getFullYear();
     </a>
     <p>Running the Somerset Levels since 1998.</p>
     <div class="footer-links">
-      <a href="https://www.facebook.com/langportrunners/" target="_blank" rel="noreferrer">Facebook ↗</a>
+      <a href="https://www.facebook.com/langportrunners/" target="_blank" rel="noreferrer" aria-label="Follow Langport Runners on Facebook">Facebook ↗</a>
+      <a href="https://www.instagram.com/langport_runners/" target="_blank" rel="noreferrer" aria-label="Follow Langport Runners on Instagram">Instagram ↗</a>
+      <a href="https://www.strava.com/clubs/langportrunners" target="_blank" rel="noreferrer" aria-label="Join Langport Runners on Strava">Strava ↗</a>
       <a href="https://www.langportrunners.co.uk/" target="_blank" rel="noreferrer">Club website ↗</a>
     </div>
     <p class="copyright">© <span id="year"></span> Langport Runners</p>
