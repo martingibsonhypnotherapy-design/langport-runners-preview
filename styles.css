@@ -76,7 +76,17 @@ h1, h2, h3 { margin: 0; font-family: var(--display); text-transform: uppercase; 
 h1 { max-width: 790px; font-size: clamp(86px, 10.8vw, 166px); font-weight: 900; line-height: .88; letter-spacing: -.012em; }
 h1 em { color: white; font-style: italic; text-shadow: 0 4px 18px rgba(0,0,0,.28); }
 .hero-brand { display: flex; align-items: center; gap: clamp(18px, 2.4vw, 34px); max-width: 950px; }
-.hero-brand span { display: block; }
+.hero-brand span {
+  display: block;
+  color: var(--club-purple);
+  -webkit-text-stroke: 2px white;
+  paint-order: stroke fill;
+  text-shadow: 0 4px 18px rgba(0,0,0,.28);
+}
+.hero-brand em {
+  color: var(--club-purple);
+  -webkit-text-stroke: 2px white;
+}
 .hero-brand-logo { width: clamp(116px, 11vw, 178px); height: auto; flex: 0 0 auto; object-fit: contain; }
 .hero-copy { max-width: 600px; margin: 35px 0 0; color: rgba(255,255,255,.82); font-size: clamp(16px, 1.25vw, 20px); line-height: 1.6; }
 .hero-actions { display: flex; align-items: center; gap: 34px; margin-top: 38px; }
