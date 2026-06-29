@@ -83,7 +83,7 @@ h1 em { color: white; font-style: italic; text-shadow: 0 4px 18px rgba(0,0,0,.28
   width: max-content;
   padding: 18px 28px 18px 22px;
   margin-left: -22px;
-  background: linear-gradient(90deg, rgba(255,255,255,.18) 0%, rgba(255,255,255,.11) 62%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,.27) 0%, rgba(255,255,255,.17) 62%, rgba(255,255,255,0) 100%);
 }
 .hero-brand span {
   display: block;
