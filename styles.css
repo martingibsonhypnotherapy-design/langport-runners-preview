@@ -240,11 +240,11 @@ h1 em { color: white; font-style: italic; text-shadow: 0 4px 18px rgba(0,0,0,.28
   .hero { min-height: 880px; height: auto; }
   .hero-media { background-position: 69% center; }
   .hero-shade { background: linear-gradient(90deg, rgba(5,18,32,.96) 0%, rgba(5,18,32,.78) 48%, rgba(5,18,32,.25) 100%), linear-gradient(0deg, rgba(5,18,32,.96) 0%, transparent 62%); }
-  .hero-content { width: 100%; padding: 145px 18px 190px; }
+  .hero-content { width: 100%; padding: 112px 18px 220px; }
   .eyebrow { max-width: 270px; margin-bottom: 18px; font-size: 10px; line-height: 1.4; }
-  h1 { max-width: 100%; font-size: clamp(62px, 21vw, 91px); line-height: .92; letter-spacing: 0; }
-  .hero-brand { gap: 14px; width: calc(100% + 16px); padding: 12px 16px 12px 10px; margin-left: -10px; }
-  .hero-brand-logo { width: clamp(108px, 32vw, 145px); }
+  h1 { max-width: 100%; font-size: clamp(50px, 16.5vw, 74px); line-height: .94; letter-spacing: 0; }
+  .hero-brand { gap: 10px; width: 100%; padding: 10px 12px 10px 8px; margin-left: -8px; }
+  .hero-brand-logo { width: clamp(86px, 28vw, 126px); }
   .hero-copy { max-width: 360px; margin-top: 25px; font-size: 15px; line-height: 1.55; }
   .hero-actions { align-items: stretch; flex-direction: column; gap: 18px; max-width: 310px; margin-top: 26px; }
   .hero-actions .button { width: 100%; min-height: 56px; }
