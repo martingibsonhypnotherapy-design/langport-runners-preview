@@ -241,7 +241,7 @@ h1 em { color: white; font-style: italic; text-shadow: 0 4px 18px rgba(0,0,0,.28
   .hero-media { background-size: auto calc(100% + 260px); background-position: 69% -230px; }
   .hero-shade { background: linear-gradient(90deg, rgba(39,19,95,.94) 0%, rgba(91,54,176,.78) 36%, rgba(91,54,176,.30) 68%, rgba(39,19,95,.19) 100%), linear-gradient(0deg, rgba(23,18,31,.85) 0%, transparent 58%); }
   .hero-content { width: 100%; padding: 112px 18px 220px; }
-  .eyebrow { max-width: 270px; margin-bottom: 18px; font-size: 10px; line-height: 1.4; }
+  .eyebrow { max-width: 100%; margin: 14px auto 0; justify-content: center; font-size: 10px; line-height: 1.4; text-align: center; }
   h1 { max-width: 100%; font-size: clamp(50px, 16.5vw, 74px); line-height: .94; letter-spacing: 0; }
   h1.hero-brand { display: flex; gap: 6px; width: max-content; max-width: 100%; padding: 0; margin: 0 auto; justify-content: center; align-items: center; font-size: clamp(32px, 9.8vw, 49px); letter-spacing: .095em; }
   .hero-brand span { min-width: 0; transform: none; }
