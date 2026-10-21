@@ -238,7 +238,7 @@ h1 em { color: white; font-style: italic; text-shadow: 0 4px 18px rgba(0,0,0,.28
   .brand strong { font-size: 18px; }
   .brand-logo { width: 46px; height: 47px; }
   .hero { min-height: 1000px; height: auto; }
-  .hero-media { background-position: 69% center; }
+  .hero-media { background-position: 69% 28%; }
   .hero-shade { background: linear-gradient(90deg, rgba(39,19,95,.94) 0%, rgba(91,54,176,.78) 36%, rgba(91,54,176,.30) 68%, rgba(39,19,95,.19) 100%), linear-gradient(0deg, rgba(23,18,31,.85) 0%, transparent 58%); }
   .hero-content { width: 100%; padding: 112px 24px 220px 18px; }
   .eyebrow { max-width: 270px; margin-bottom: 18px; font-size: 10px; line-height: 1.4; }
