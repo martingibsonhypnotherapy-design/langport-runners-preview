@@ -239,13 +239,13 @@ h1 em { color: white; font-style: italic; text-shadow: 0 4px 18px rgba(0,0,0,.28
   .brand-logo { width: 46px; height: 47px; }
   .hero { min-height: 880px; height: auto; }
   .hero-media { background-position: 69% center; }
-  .hero-shade { background: linear-gradient(90deg, rgba(39,19,95,.91) 0%, rgba(91,54,176,.55) 36%, rgba(91,54,176,.14) 68%, rgba(39,19,95,.19) 100%), linear-gradient(0deg, rgba(23,18,31,.85) 0%, transparent 58%); }
+  .hero-shade { background: linear-gradient(90deg, rgba(39,19,95,.94) 0%, rgba(91,54,176,.78) 36%, rgba(91,54,176,.30) 68%, rgba(39,19,95,.19) 100%), linear-gradient(0deg, rgba(23,18,31,.85) 0%, transparent 58%); }
   .hero-content { width: 100%; padding: 112px 18px 220px; }
   .eyebrow { max-width: 270px; margin-bottom: 18px; font-size: 10px; line-height: 1.4; }
   h1 { max-width: 100%; font-size: clamp(50px, 16.5vw, 74px); line-height: .94; letter-spacing: 0; }
   .hero-brand { gap: 10px; width: 100%; padding: 0; margin-left: 0; }
   .hero-brand-logo { width: clamp(86px, 28vw, 126px); }
-  .hero-copy { max-width: 360px; margin-top: 25px; font-size: 15px; line-height: 1.55; }
+  .hero-copy { max-width: 360px; margin-top: 25px; color: #fff; font-size: 16px; font-weight: 600; line-height: 1.6; text-shadow: 0 2px 5px rgba(15,7,38,.95), 0 0 18px rgba(15,7,38,.85); }
   .hero-actions { align-items: stretch; flex-direction: column; gap: 18px; max-width: 310px; margin-top: 26px; }
   .hero-actions .button { width: 100%; min-height: 56px; }
   .hero-actions .text-link { align-self: flex-start; min-height: 44px; }
