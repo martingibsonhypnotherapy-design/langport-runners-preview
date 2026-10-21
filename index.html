@@ -27,7 +27,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261021-mobile18">
+  <link rel="stylesheet" href="styles.css?v=20261021-mobile19">
+  <style>
+    /* Keep matching decorative rules around the homepage tagline, even on cached mobile styles. */
+    .hero-content .hero-tagline { display: flex; align-items: center; justify-content: center; gap: 8px; }
+    .hero-content .hero-tagline > span { display: none; }
+    .hero-content .hero-tagline::before,
+    .hero-content .hero-tagline::after { content: ""; display: block; flex: 0 0 16px; width: 16px; height: 2px; background: #fff; }
+  </style>
   <script src="script.js" defer></script>
   <script type="application/ld+json">
   {
