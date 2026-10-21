@@ -67,7 +67,7 @@ button { font: inherit; }
 
 .hero { position: relative; min-height: 820px; height: 100vh; max-height: 1000px; color: white; overflow: hidden; background: var(--navy); }
 .hero-media { position: absolute; inset: 0; background: url("assets/langport-runners-hero-v2.webp") center center / cover no-repeat; transform: scale(1.01); }
-.hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(39,19,95,.98) 0%, rgba(91,54,176,.86) 42%, rgba(39,19,95,.34) 76%), linear-gradient(0deg, rgba(23,18,31,.76) 0%, transparent 45%); }
+.hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(39,19,95,.94) 0%, rgba(91,54,176,.67) 25%, rgba(91,54,176,.12) 54%, rgba(39,19,95,.18) 100%), linear-gradient(0deg, rgba(23,18,31,.68) 0%, transparent 38%); }
 .hero-content { position: relative; z-index: 2; width: 56%; padding: 22vh 5vw 0; }
 .eyebrow, .kicker { margin: 0 0 22px; font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
 .eyebrow { display: flex; align-items: center; gap: 12px; color: white; }
@@ -208,7 +208,7 @@ h1 em { color: white; font-style: italic; text-shadow: 0 4px 18px rgba(0,0,0,.28
   .nav-cta { font-family: var(--body); font-size: 14px; text-transform: none; }
   .hero { min-height: 760px; height: 100svh; max-height: none; }
   .hero-media { background-position: 61% center; }
-  .hero-shade { background: linear-gradient(90deg, rgba(5,18,32,.93), rgba(5,18,32,.36)), linear-gradient(0deg, rgba(5,18,32,.9), transparent 50%); }
+  .hero-shade { background: linear-gradient(90deg, rgba(39,19,95,.90) 0%, rgba(91,54,176,.55) 28%, rgba(91,54,176,.12) 65%, rgba(39,19,95,.18) 100%), linear-gradient(0deg, rgba(23,18,31,.76) 0%, transparent 48%); }
   .hero-content { width: min(90%, 700px); padding: 21vh 24px 0; }
   .hero-brand { max-width: 760px; }
   .hero-copy { max-width: 520px; }
@@ -239,7 +239,7 @@ h1 em { color: white; font-style: italic; text-shadow: 0 4px 18px rgba(0,0,0,.28
   .brand-logo { width: 46px; height: 47px; }
   .hero { min-height: 880px; height: auto; }
   .hero-media { background-position: 69% center; }
-  .hero-shade { background: linear-gradient(90deg, rgba(5,18,32,.96) 0%, rgba(5,18,32,.78) 48%, rgba(5,18,32,.25) 100%), linear-gradient(0deg, rgba(5,18,32,.96) 0%, transparent 62%); }
+  .hero-shade { background: linear-gradient(90deg, rgba(39,19,95,.91) 0%, rgba(91,54,176,.55) 36%, rgba(91,54,176,.14) 68%, rgba(39,19,95,.19) 100%), linear-gradient(0deg, rgba(23,18,31,.85) 0%, transparent 58%); }
   .hero-content { width: 100%; padding: 112px 18px 220px; }
   .eyebrow { max-width: 270px; margin-bottom: 18px; font-size: 10px; line-height: 1.4; }
   h1 { max-width: 100%; font-size: clamp(50px, 16.5vw, 74px); line-height: .94; letter-spacing: 0; }
