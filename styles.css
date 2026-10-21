@@ -243,7 +243,7 @@ h1 em { color: white; font-style: italic; text-shadow: 0 4px 18px rgba(0,0,0,.28
   .hero-content { width: 100%; padding: 112px 18px 220px; }
   .eyebrow { max-width: 270px; margin-bottom: 18px; font-size: 10px; line-height: 1.4; }
   h1 { max-width: 100%; font-size: clamp(50px, 16.5vw, 74px); line-height: .94; letter-spacing: 0; }
-  h1.hero-brand { display: flex; gap: 6px; width: max-content; max-width: 100%; padding: 0; margin: 0 auto; justify-content: center; align-items: center; font-size: clamp(32px, 9.8vw, 49px); letter-spacing: .015em; }
+  h1.hero-brand { display: flex; gap: 6px; width: max-content; max-width: 100%; padding: 0; margin: 0 auto; justify-content: center; align-items: center; font-size: clamp(32px, 9.8vw, 49px); letter-spacing: .095em; }
   .hero-brand span { min-width: 0; transform: none; }
   .hero-brand em { -webkit-text-stroke-width: 1.5px; }
   .hero-brand-logo { width: clamp(58px, 18vw, 82px); }
